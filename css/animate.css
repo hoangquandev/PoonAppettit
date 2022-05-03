@@ -1,0 +1,21 @@
+@keyframes rotate{
+    0%{
+        transform: rotate(20deg);
+    }
+    25%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    75%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+.rotate{
+    animation: rotate 1s linear infinite;
+}

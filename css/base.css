@@ -1,0 +1,77 @@
+/* ========= FONT ======== */
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../Font/ProductSansVH/ProductSansRegular.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: ProductSansBoldItalic;
+    src: url(../Font/ProductSansVH/ProductSansBoldItalic.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Typeface;
+    src: url(../Font/DFVNAustroTypeface.otf);
+    font-weight: normal;
+}
+
+:root{
+    --header-height: 7.813rem; /*125px*/
+
+    /*====== font and typography ======*/
+    /* 0.5rem =8px | 1rem =16px */
+    
+
+
+    /* ====== color ====== */
+    --color-dark: black;
+}
+
+/*====== base ====== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Typeface;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+footer{
+    padding: 5%
+}
+
+
