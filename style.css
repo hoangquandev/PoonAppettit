@@ -1,11 +1,13 @@
 /*  ============== Header ================  */
-.header{
-    position: relative;
-    height: 37.5rem;
-    font-family: ProductSans;
-    font-size: 0.813rem;
-    background-image: url(./HomepagePhase2/Banner1_Imagebackground1.png);
-    background-size: cover;
+header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .banner-header-text p{
     width: 100vw;
@@ -13,12 +15,18 @@
 
 .container{
     position: relative;
+    top: 0;
+    left: 0;
     width: 100vw;
-    height: 400px;
+    height: 600px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: ProductSans;
+    font-size: 0.813rem;
+    background-image: url(./HomepagePhase2/Banner1_Imagebackground1.png);
+    background-size: cover;
 }
 
 .container img{
@@ -28,31 +36,31 @@
 
 .container img:nth-child(1){
     width: 20px;
-    top: 46%;
+    top: 56%;
     left: 25%;
 }
 
 .container img:nth-child(2){
     width: 37px;
-    top: 15%;
+    top: 30%;
     left: 29%;
 }
 
 .container img:nth-child(3){
     width: 80px;
-    top: 8%;
+    top: 25%;
     left: 44%;
 }
 
 .container img:nth-child(4){
     width: 54px;
-    top: 15%;
+    top: 30%;
     left: 52%;
 }
 
 .container img:nth-child(5){
     width: 60px;
-    top: 11%;
+    top: 24%;
     left: 67%;
 }
 
@@ -70,11 +78,11 @@
 
 .container img:nth-child(8){
     width: 25px;
-    top: 10%;
+    top: 23%;
     left: 50%;
 }
 
-.container h2{
+/* .container h2{
     text-align: center;
     font-family: Typeface;
     font-size: 131px;
@@ -87,7 +95,7 @@
     -webkit-text-fill-color: transparent; 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #d65338;
-}
+} */
 
 
 
@@ -105,7 +113,9 @@
 
 /* ========== Navigation ============ */
 nav{
-    width: 100vw;
+    font-family: ProductSans;
+    font-size: 0.813rem;
+    width: 50vw;
     position: relative;
     z-index: 1000;  
 }
@@ -120,6 +130,10 @@ nav .nav{
 
 nav ul{
     line-height: 7.813rem;
+}
+
+nav ul li{
+    display: inline-block;
 }
 
 .logo{
@@ -137,13 +151,69 @@ img.logo-img{
     margin-right: auto;
 }
 
-/* ========== Banner ============ */
+.hamburger{
+    display: block;
+    position: relative;
+    z-index: 1;
+    
+    user-select: none;
 
-.banner-header-text{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: #333;
+    border-radius: 6px;
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: 0.4s;
+}
+.hamburger:hover span:nth-child(2){
+    transform: translateX(10px);
+    background-color: #73dea9;
+}
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+.hamburger.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+.hamburger.is-active:hover span{
+    background-color: #73dea9;
+}
+
+/* ========== Banner ============ */
+.wrapper{
+    position: relative;
+    height: 600px;
+}
+.banner-btn{
     position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+}
+.banner-header-text{
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); */
     text-align: center;
     font-family: Typeface;
 }
@@ -160,13 +230,7 @@ img.logo-img{
     -webkit-text-stroke-color: #d65338;
 }
 
-.banner-btn{
-    position: absolute;
-    bottom: 65px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-}
+
 
 .banner-btn img{
     width: 136px;
@@ -662,7 +726,7 @@ img.logo-img{
 }
 
 .banner8-center img{
-    width: 90%;
+    width: 100%;
 }
 
 .banner8-left-text,

@@ -10,3 +10,10 @@ var typed = new Typed(".typing1",{
     BackSpeed: 60,
     loop: true
 })
+
+// hamburger
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', function () {
+    this.classList.toggle('is-active');
+});
