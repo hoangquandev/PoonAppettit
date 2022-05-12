@@ -287,6 +287,10 @@
     .banner8-right-text p{
         font-size: 14px;
     }
+    
+    .comment{
+        margin-top: 22px;
+    }
     .comment p{
         font-size: 21px;
     }
@@ -546,6 +550,7 @@
     left: 50%;
     transform: translateX(-50%);
 } */
+
 }
 
 /* PC medium resolution > */
@@ -559,6 +564,20 @@
     .nav-right,
     .nav-left{
         display: block;
+    }
+    .banner-1 .banner-items .banner-item img{
+        width: 100%;
+    }
+    .banner-4,
+    .slider{
+        height: 25vw;
+    }
+    .slide img{
+        width: 70%;
+
+    }
+    .sanpham img{
+        width: 45%;
     }
 }
 
@@ -649,6 +668,16 @@
     .banner-1 .banner-items .banner-item img{
         width: 100%;
     }
-    
+    .banner-4,
+    .slider{
+        height: 25vw;
+    }
+    .slide img{
+        width: 70%;
+
+    }
+    .sanpham img{
+        width: 45%;
+    }
 }
 
