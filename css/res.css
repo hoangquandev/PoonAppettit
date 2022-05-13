@@ -251,6 +251,7 @@
     .banner-4 .favicon{
         width: 20px;
     }
+    
     /* banner5 */
     .banner5-middle{
         display: none;
@@ -357,6 +358,20 @@
     .banner-4 img{
         display: none;
     }
+    .a:link, .a:visited {
+        background-color: #f44336;
+        font-family: ProductSans;
+        color: white;
+        padding: 8px 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 25px;
+        display: inline-block;
+      }
+      
+      .a:hover, .a:active {
+        background-color: red;
+      }
     /* banner 5 */
     .banner-5-middle{
         display: none;
