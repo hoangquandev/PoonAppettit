@@ -280,7 +280,7 @@
     .banner8-right>img,
     .banner8-left-text,
     .banner8-right-text{
-        width: 50vw;
+        width: 48.5vw;
         height: 50vw;
     }
     .banner8-left-text p,
@@ -300,10 +300,20 @@
         transform: translateX(-50%);
     }
     footer{
-        height: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 400px;
+    }
+    footer .navlink,
+    footer .footer-logo,
+    footer .footer-contact,
+    footer .footer-contact .lienhe,
+    footer .footer-contact .diachi{
+        width: 80vw;
     }
     footer .footer-contact .diachi span,
-    footer .footer-contact .lienhe span{
+     span{
         margin: 0 0 0 5px;
         font-size: 13px;
     }
