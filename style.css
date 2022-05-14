@@ -258,48 +258,40 @@ img.logo-img{
 }
 
 /* ======= banner 1 ======= */
-.flex-center,
-.banner-1 .banner-items .banner-item{
+.banner1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner1-top,
+.banner1-bottom{
+    flex: 0 0  50%;
+    max-width: 50%;
+    display: flex;
+}
+
+.banner1-text,
+.banner1-img{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.banner1-text{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25vw;
-    height: 25vw;
+    font-size: 55px;
 }
 
-.banner-1 .banner-items .banner-item p{
-    text-align: center;
-    font-size: 3.438rem;
-}
-
-.banner-1 .banner-items .banner-item:nth-child(1){
+.banner1-top .banner1-text{
     background-color: #f0b05a;
     color: #41814b;
 }
-.banner-1 .banner-items .banner-item:nth-child(2){
-    background-color: #e2a3a1;
-}
-.banner-1 .banner-items .banner-item:nth-child(3){
+
+.banner1-bottom .banner1-text{
     background-color: #d65338;
-    color: white;
+    color: aliceblue;
 }
-.banner-1 .banner-items .banner-item:nth-child(4){
-    background-color: #00add5;
-}
-
-.banner-1 .banner-items .banner-item img{
-    height: 100%;
-    width: 100%;
-    margin: 0 -8px;
-    transition: transform 0.3s ease;
-}
-
-.banner-1 .banner-items .banner-item img:hover{
-    transform: scale(1.1);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-
 
 /* banner 2 */
 .banner2{
@@ -654,11 +646,15 @@ img.logo-img{
     display: none;
 }
 /* banner 5 */
-
+.banner5{
+    display: flex;
+}
 .banner5-middle{
     background-image: url(./Images2/hinh-09.png);
     background-size: cover;
     text-align: center;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 .banner5-middle img{
     width: 169px;
@@ -673,13 +669,17 @@ img.logo-img{
 
 .banner5-right,
 .banner5-left{
-    height: 50vw;
+    flex: 0 0 25%;
+    max-width: 25%;
+    max-height: 50%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 .banner5-right .banner5-right-item,
 .banner5-left .banner5-left-item{
-    height: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -700,67 +700,38 @@ img.logo-img{
 .banner5-right .banner5-right-item:last-child{
     background-color: #e2a3a1;
 }
-/* banner 7 */
-
-.banner-7{
-    /* width: 100vw; */
-    color: white;
-}
-
-.banner-7-2{
-    position: relative;
-    background-color: #00add5;
-    text-align: center;
-}
-
-.banner-7-4{
-    background-color: #73dea9;
-    position: relative;
-    text-align: center;
-}
-
-.top{
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-}
-
-.center-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 31px;
-}
-
-.bottom{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.bottom img{
-    height: 20px;
-}
 
 /* banner8 */
+.banner8{
+    display: flex;
+}
 .banner8-center{
+    flex: 0 0 50%;
+    max-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.banner8-left,
+.banner8-right{
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .banner8-center img{
-    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 100%;
 }
 
 .banner8-left-text,
 .banner8-right-text{
+    flex: 0 0 100%;
+    max-width: 100%;
     height: 25vw;
-    width: 25vw;
     text-align: center;
     color: white;
     
