@@ -247,10 +247,9 @@
         height: 100vw;
     }
     
+    .cta h1,
     .cta p{
-        -webkit-text-fill-color: white; 
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: white;
+        color: aliceblue;
         font-size: 22px;
         width: 100%;
     }
@@ -300,7 +299,8 @@
     .comment{
         margin-top: 22px;
     }
-    .comment p{
+    .comment p,
+    .comment p span{
         font-size: 21px;
     }
     .banner8-left-text img,
@@ -542,6 +542,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .cta p{
+        font-size: 3rem;
+        -webkit-text-fill-color: #d65338; 
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
+    
+    .cta h1{
+        font-size: 12rem;
+        color: white;
     }
     footer{
         height: 200px;

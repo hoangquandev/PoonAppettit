@@ -231,10 +231,6 @@ img.logo-img{
     transform: translateX(-50%);
 }
 .banner-header-text{
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%); */
     text-align: center;
     font-family: Typeface;
 }
@@ -245,6 +241,7 @@ img.logo-img{
 }
 
 .banner-header-text p:last-child{
+    margin-top: 22px;
     font-size: 4.438rem;
     -webkit-text-fill-color: transparent; 
     -webkit-text-stroke-width: 1px;
@@ -281,6 +278,9 @@ img.logo-img{
     justify-content: center;
     align-items: center;
     font-size: 55px;
+}
+.banner1-text p{
+    text-align: center;
 }
 
 .banner1-top .banner1-text{
@@ -348,14 +348,7 @@ img.logo-img{
     transform: translateZ(12px);
 }
 
-/* .slider::before,
-.slider::after{
-    background: linear-gradient(to right, rgba(255,255,255,1),rgba(255,255,255,0));
-    content: '';
-    height: 100%;
-    width: 15%;
-    z-index: 2;
-} */
+
 
 .slider::before{
     left: 0;
@@ -503,28 +496,10 @@ img.logo-img{
     /* align-items: center; */
 }
 
-.bannerhai{
-    position: relative;
-}
-
-.bannerhai .before-2{
-    position: absolute;
-    z-index: 10000;
-    top: -2.5rem;
-    height: 30vw;
-}
 
 
-.banner-2::-webkit-scrollbar{
-    width: 0;
-}
 
-.banner-2 .slide{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    min-width: 425vw;
-}
+
 
 @keyframes slide{
     from{
@@ -533,10 +508,6 @@ img.logo-img{
     to{
         left: -100%;
     }
-}
-
-.banner-2 .slide{
-    animation: slide 14s linear infinite;
 }
 
 /* banner 3 */
@@ -596,18 +567,6 @@ img.logo-img{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-
-.cta p{
-    font-size: 3rem;
-    -webkit-text-fill-color: #d65338; 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-}
-
-.cta h1{
-    font-size: 12rem;
-    color: white;
 }
 
 .banner-4 .imgBanner4-1{
