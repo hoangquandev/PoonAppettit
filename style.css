@@ -267,8 +267,7 @@ img.logo-img{
     display: flex;
 }
 
-.banner1-text,
-.banner1-img{
+.banner1-text{
     flex: 0 0 50%;
     max-width: 50%;
 }
@@ -291,6 +290,32 @@ img.logo-img{
 .banner1-bottom .banner1-text{
     background-color: #d65338;
     color: aliceblue;
+}
+
+.box{
+    position: relative;
+    height: 100%;
+}
+.box .imgbox{
+    position: relative;
+}
+.box .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    transform: scaleY(0);
+    transition: transform 1s;
+}
+
+.box .details img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
 }
 
 /* banner 2 */
@@ -396,7 +421,7 @@ img.logo-img{
     left: 20%;
 }
 .img4{
-    width: 55px;
+    width: 30px;
     top: 35%;
     left: 25%;
 }
@@ -604,27 +629,68 @@ img.logo-img{
 .cta6-mobile{
     display: none;
 }
+/* banner3 */
+.banner3-box{
+    position: relative;
+}
+.banner3-box .imgbox{
+    position: relative;
+}
+.banner3-box .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    transform: scaleY(0);
+    transition: transform 1s;
+}
+
+.banner3-box:hover .details{
+    transform: scaleY(1);
+}
+
+.banner3-box .details img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+}
 /* banner 5 */
 .banner5{
     display: flex;
 }
 .banner5-middle{
+    position: relative;
     background-image: url(./Images2/hinh-09.png);
     background-size: cover;
     text-align: center;
     flex: 0 0 50%;
     max-width: 50%;
 }
-.banner5-middle img{
-    width: 169px;
-    margin-top: 30px;
+
+.banner5-middle .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    transform: scaleY(0);
+    transition: transform 1s;
 }
-.banner5-middle p{
-    font-family: ProductSansBoldItalic;
-    font-size: 16px;
-    margin-top: 5px;
-    color: #d65338;
+
+.banner5-middle .details img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
 }
+
+
 
 .banner5-right,
 .banner5-left{

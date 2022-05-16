@@ -247,6 +247,7 @@
         height: 100vw;
     }
     
+    .cta .fill a,
     .cta h1,
     .cta p{
         color: aliceblue;
@@ -390,6 +391,10 @@
         height: 50vw;
         width: 50vw;
     }
+    /* footer */
+    footer .footer-contact .lienhe span{
+        margin-left: 7px;
+    }
 }
 /* >= Tablet */
 @media (min-width: 740px){
@@ -406,10 +411,10 @@
         justify-content: space-between;
     }
     /* banner1 */
-    .banner1-img img{
-        transition: transform 0.3s ease;
+    .box:hover .details{
+        transform: scaleY(1);
     }
-    .banner1-img img:hover{
+    .box:hover{
         transform: scale(1.1);
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
@@ -451,7 +456,7 @@
     }
     .img4{
         top: 90%;
-        left: 40%;
+        left: 50%;
         /* width: 5px; */
     }
     .img5{
@@ -543,17 +548,27 @@
         justify-content: center;
         align-items: center;
     }
+    .cta .fill a,
     .cta p{
         font-size: 3rem;
         -webkit-text-fill-color: #d65338; 
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
     }
+    .cta .fill a:hover{
+        -webkit-text-fill-color: white; 
+    }
     
     .cta h1{
         font-size: 12rem;
         color: white;
     }
+    /* banner5 */
+    .banner5-middle:hover .details{
+        transform: scaleY(1);
+    }
+
+
     footer{
         height: 200px;
     }
@@ -582,6 +597,9 @@
     }
     .sanpham img{
         width: 45%;
+    }
+    .banner3-box{
+        display: none;
     }
 }
 
@@ -712,6 +730,13 @@
     .cta h1{
         font-size: 170px;
     }
+    /* banner4 */
+    .cta .fill:hover a{
+        color: aliceblue;
+    }
+    .banner3-box{
+        display: none;
+    }
     .banner5-middle{
         display: block;
     }
@@ -719,5 +744,6 @@
     .banner5-left-item{
         height: 25vw;
     }
+    
 }
 
