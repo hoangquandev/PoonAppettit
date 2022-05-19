@@ -412,12 +412,13 @@
     }
     /* banner1 */
     .box:hover .details{
-        transform: scaleY(1);
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 1;
     }
-    .box:hover{
+    /* .box:hover{
         transform: scale(1.1);
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
+    } */
 
     /* slide */
     .slider{
@@ -565,7 +566,8 @@
     }
     /* banner5 */
     .banner5-middle:hover .details{
-        transform: scaleY(1);
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.4);
     }
 
 

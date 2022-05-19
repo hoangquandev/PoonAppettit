@@ -303,11 +303,11 @@ img.logo-img{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
     height: 100%;
     width: 100%;
-    transform: scaleY(0);
-    transition: transform 1s;
+    transition: opacity 2s;
 }
 
 .box .details img{
@@ -640,15 +640,16 @@ img.logo-img{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.3);
     height: 100%;
     width: 100%;
-    transform: scaleY(0);
-    transition: transform 1s;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .banner3-box:hover .details{
-    transform: scaleY(1);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .banner3-box .details img{
@@ -675,11 +676,11 @@ img.logo-img{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0);
     height: 100%;
     width: 100%;
-    transform: scaleY(0);
-    transition: transform 1s;
+    opacity: 0;
+    transition: opacity 2s;
 }
 
 .banner5-middle .details img{
